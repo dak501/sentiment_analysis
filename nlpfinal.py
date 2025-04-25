@@ -278,8 +278,8 @@ for i in x:
     for j in i.split():
         lem_j=lemmatizer.lemmatize(j)
         lem_j2=lemmatizer.lemmatize(lem_j,pos="v")
-        lem_j3=lemmatizer.lemmatize(lem_j,pos="a")
-        lem_j4=lemmatizer.lemmatize(lem_j,pos="r")
+        lem_j3=lemmatizer.lemmatize(lem_j2,pos="a")
+        lem_j4=lemmatizer.lemmatize(lem_j3,pos="r")
         lem_list.append(lem_j4)
     lem_i=' '.join(lem_list)
     x_lem.append (lem_i)
